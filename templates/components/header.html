@@ -1,10 +1,10 @@
 {% load static %}
 
-<header class="navbar navbar-expand-xl navbar-light" >
+<header class="navbar navbar-expand-xl navbar-light" style="box-shadow:  5px 5px 20px -5px #999;">
         <div class="container">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'home'%}">
                 <img src="{% static 'assets/img/kedigital.png' %}" class="navbar-brand-img" alt="...">
             </a>
 
@@ -44,7 +44,7 @@
                             <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
                                 <div class="dropdown-menu-md bg-primary rounded dropdown-menu-inner">
                                     {% for i in cat.course_set.all %}
-                                    <a class="dropdown-item" href="course-single-v1.html">
+                                    <a class="dropdown-item" href="#">
                                         {{i.title}}
                                     </a>
                                     {% endfor %}

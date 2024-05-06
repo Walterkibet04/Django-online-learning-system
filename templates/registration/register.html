@@ -34,7 +34,7 @@
                 <h3 class="mb-6">Sign Up and Start Learning!</h3>
                 {% include 'components/msg.html' %}
                 <!-- Form Register -->
-                <form class="mb-5" method="post" action="{% url 'register'%}">
+                <form class="mb-5" method="post" action="{% url 'register' %}">
                     {% csrf_token %}
                     <!-- Username -->
                     <div class="form-group mb-5">
@@ -69,7 +69,7 @@
 
                 <!-- Text -->
                 <p class="mb-0 font-size-sm text-center">
-                    Already have an account? <a class="text-underline" href="login.html">Log In</a>
+                    Already have an account? <a class="text-underline" href="{% url 'doLogin' %}">Log In</a>
                 </p>
             </div>
         </div>

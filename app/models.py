@@ -96,7 +96,7 @@ class Lesson(models.Model):
 
     def __str__(self):
         return self.name + " - " + self.course.title
-    
+ 
 class Video (models.Model):
     serial_number = models.IntegerField(null=True)
     thumbnail = models.ImageField(upload_to="Media/Yt_Thumbnail", null=True)

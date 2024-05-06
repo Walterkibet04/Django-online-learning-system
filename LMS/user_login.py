@@ -43,8 +43,9 @@ def DO_LOGIN(request):
            login(request,user)
            return redirect('home')
         else:
-           messages.error(request,'Email and Password Are Invalid !')
+           messages.error(request,'Please provide email and password !')
            return redirect('login')
+           
         
 
 def PROFILE(request):
