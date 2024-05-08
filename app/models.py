@@ -48,7 +48,6 @@ class Course(models.Model):
     slug = models.SlugField(default='', max_length=500, null=True, blank=True)
     status = models.CharField(choices=STATUS,max_length=100,null=True)
 
-
     def __str__(self):
         return self.title
     

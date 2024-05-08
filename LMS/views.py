@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import redirect, render
-from app.models import Categories,Course, Level,Video, UserCourse
+from app.models import Categories,Course, Level, UserCourse
 from django.template.loader import render_to_string
 from django.http import JsonResponse
 
