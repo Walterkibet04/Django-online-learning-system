@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yj(t*mve4x=)#ot!7$+kx1*e*g5@1@l1zjr4-j^o%8nx#4=x7v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kedigital-online-learning-system.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
